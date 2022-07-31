@@ -1,0 +1,19 @@
+{
+  "name": "pobu",
+  "version": "0.1.0",
+  "description": "Programming language for simulating user-like events",
+  "main": "app/index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Borecjeborec1/Pobu.git"
+  },
+  "author": "borecjeborec1",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Borecjeborec1/Pobu/issues"
+  },
+  "homepage": "https://github.com/Borecjeborec1/Pobu#readme"
+}

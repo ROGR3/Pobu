@@ -1,0 +1,11 @@
+on write test
+sleep 100
+press e
+sleep 100
+press q
+sleep 100
+move relative 200 -500
+sleep 100
+press f
+sleep 100
+press r

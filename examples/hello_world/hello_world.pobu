@@ -1,0 +1,3 @@
+on start
+wait 2000
+write Hello World

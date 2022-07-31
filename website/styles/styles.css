@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+html,
+body {
+  background-color: #475C7A;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+#header {
+  height: 100px;
+}
+
+#header .container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header .container .logo {
+  width: 250px;
+}
+
+#header .container .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .container .nav-bar li {
+  display: inline-block;
+  padding: 5px 15px;
+  cursor: pointer;
+  -webkit-transition: .25s all ease;
+  transition: .25s all ease;
+  border-radius: 3px;
+}
+
+#header .container .nav-bar li:hover {
+  color: #D8737F;
+}
+
+#header .container .nav-bar #current-li {
+  font-weight: bold;
+  color: #D8737F;
+}
+
+#gallery {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  right: 75px;
+  top: 250px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+#gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+#gallery .clipped-border {
+  -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+          clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  padding: 5px;
+  background: #D8737F;
+  width: 200px;
+  height: 200px;
+  max-height: 250px;
+  max-width: 250px;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  position: absolute;
+  cursor: pointer;
+}
+
+#gallery .clipped-border:before {
+  content: '';
+  position: absolute;
+  opacity: 0.5;
+  width: 350px;
+  height: 70px;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+#gallery .clipped-border:hover:before {
+  -webkit-transform: translate(-100px, 400%) rotate(45deg);
+          transform: translate(-100px, 400%) rotate(45deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+#gallery .clipped-border:nth-child(2) {
+  top: 196px;
+  left: 118px;
+}
+
+#gallery .clipped-border:nth-child(3) {
+  top: 0;
+  left: 235px;
+}
+
+#gallery .clipped-border:nth-child(4) {
+  top: 196px;
+  left: 353px;
+}
+
+#gallery .clipped-border:nth-child(5) {
+  top: 0;
+  left: 470px;
+}
+
+#gallery #clipped {
+  -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+          clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+#gallery .clipped-border:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  z-index: 10;
+}
+
+#arrow {
+  position: absolute;
+  left: 554px;
+  bottom: 182px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#arrow14 {
+  position: absolute;
+  left: 339px;
+  bottom: 342px;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+#main-text {
+  position: absolute;
+  left: 200px;
+  bottom: 100px;
+}
+
+#main-text h1 {
+  color: #D8737F;
+  font-size: 200px;
+  line-height: 1;
+}
+
+#main-text p {
+  font-size: 25px;
+}
+
+.button {
+  background-color: #D8737F;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #475C7A;
+  font-weight: bold;
+  position: absolute;
+  left: 315px;
+  top: 336px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+/*# sourceMappingURL=styles.css.map */
