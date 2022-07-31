@@ -26,6 +26,7 @@ Pobu is open-source programming language and everyone can use it. Please, use on
         - [Move](#223-move)
         - [Wait/Sleep](#224-waitsleep)
 - [Examples](#3-examples)
+- [Limitations](#4-known-limitations)
 
 
 ## 1. Basic setup & Hello world
@@ -127,10 +128,12 @@ wait 1000
 ```
 
 ## 3. Examples 
-##### [3.1 League of Legends](./examples/league-of-legends/main.pobu)
+##### [3.1 League of Legends](./examples/league-of-legends/)
 ##### [3.2 Osu!]() Not yet!
 ##### [3.3 Fortnite]() Not yet!
 
 
 ## 4. Known limitations
 v0.1.0
+Windows only!
+Double-click is not working properly!
