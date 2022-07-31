@@ -8,4 +8,4 @@ compile({
 }).then(() => {
   console.log('success')
 })
-// pkg index.js --targets node16-win-x64 --out-path ./app
+// pkg index.js --targets node16-win-x64 --compress GZip --out-path ./app
