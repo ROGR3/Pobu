@@ -33,7 +33,7 @@ Pobu is open-source programming language and everyone can use it. Please, use on
 ## 1. Basic setup & Hello world
 
 ### 1.1 Installation 
-You can download the latest stable version [Here]().
+You can download the latest stable version [Here](https://github.com/Borecjeborec1/Pobu/releases/tag/v0.1.0).
 Or you can go to the GitHub releases and find your desired version there.
 
 When the download is completed, you are done. No other tasks are needed for basic usage. *(Later we will look closer to the windows PATH enviroment settings and file location. The whole Pobu installer is comming soon!)*
