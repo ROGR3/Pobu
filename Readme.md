@@ -1,6 +1,7 @@
 # Pobu 
-LTS version: Not deployed yet
-Latest version: v0.1.0
+**LTS version:** Not deployed yet
+
+**Latest version:** v0.1.0
 
 Pobu is programming language for creating scripts and simulating user-like events. Thanks to C/C++ native addons, pobu is fast and safe to type. Language itself is really beginner friendly, no previous expiriences in programming are not a problem.
 
