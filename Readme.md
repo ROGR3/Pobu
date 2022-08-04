@@ -136,5 +136,6 @@ wait 1000
 
 ## 4. Known limitations
 v0.1.0
-Windows only!
-Double-click is not working properly!
+
+- Windows only! (More OS support in future)
+- Double-click is not working properly!
