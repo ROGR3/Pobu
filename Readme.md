@@ -20,7 +20,7 @@ Pobu is open-source programming language and everyone can use it. Please, use on
         - [On Write](#213-on-write)
         - [On Click](#214-on-click)
         - [On Start](#216-on-start)
-    - [Event Emmiters](#22-event-emmiters)
+    - [Event emitters](#22-event-emitters)
         - [Press](#221-press)
         - [Write](#222-write)
         - [Move](#223-move)
@@ -100,20 +100,20 @@ This is not listener at all, because it is fired only once, when the programm be
 on start // do when the app starts
 *do stuff*
 ```
-### 2.2 Event emmiters
-Event emmiters are doing the hard work for us. They are used to simulate the user-like events.
+### 2.2 Event emitters
+Event emitters are doing the hard work for us. They are used to simulate the user-like events.
 ##### 2.2.1 press
-The most common emmiter. It will press any key. **press only emmits one character!**
+The most common emitter. It will press any key. **press only emitts one character!**
 ```
 press a // press "a" key
 ```
 ##### 2.2.2 write
-This emmiter is nearly same as press emmiter, but it is used for whole words not characters.
+This emitter is nearly same as press emitter, but it is used for whole words not characters.
 ```
 write you are the best // write "you are the best" keys sequence
 ```
 ##### 2.2.3 move
-This emmiter is used to control the mouse cursor. It will move the cursor to desired positions
+This emitter is used to control the mouse cursor. It will move the cursor to desired positions
 ```
 // relative movement
 move 100 200 // move the cursor 100 on x axis and 200 on y axis
@@ -122,7 +122,7 @@ move 100 200 // move the cursor 100 on x axis and 200 on y axis
 move absolute 100 200 // move the cursor on the 100, 200 coordinates
 ```
 ##### 2.2.4 wait/sleep
-This emmiter initiate an stop. How long the stop will be indicates the parameter in miliseconds!
+This emitter initiate an stop. How long the stop will be indicates the parameter in miliseconds!
 ```
 wait 1000
 ```
