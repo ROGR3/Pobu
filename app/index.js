@@ -115,16 +115,20 @@ async function simulate(codeBlock) {
             pobu.write(codes[m].split(""))
           }
           break
+        case "click":
+          pobu.mouseClick()
+          break
         case "move":
-        case "sleep":
           if (codes[1] == "relative") {
             pobu.mouseMove(+codes[2], +codes[3], false)
           } else {
             pobu.mouseMove(+codes[1], +codes[2])
           }
           break
+        case "sleep":
         case "wait":
           await sleep(codes[1])
+          break
       }
     }
   }
