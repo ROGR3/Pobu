@@ -64,7 +64,7 @@ Napi::Value Mouse_move(const Napi::CallbackInfo &info) {
     Inputs[0].mi.dwFlags = MOUSEEVENTF_MOVE;
   }
 
-  SendInput(1, Inputs, sizeof(INPUT));
+  SendInput((sizeof(Inputs) / sizeof(*Inputs)), Inputs, sizeof(INPUT));
   return Napi::Boolean::New(env, true);
 }
 
@@ -102,7 +102,7 @@ Napi::Value Mouse_click(const Napi::CallbackInfo &info) {
   Inputs[2].type = INPUT_MOUSE;
   Inputs[2].mi.dwFlags = MOUSEEVENTF_LEFTUP;
 
-  SendInput(1, Inputs, sizeof(INPUT));
+  SendInput((sizeof(Inputs) / sizeof(*Inputs)), Inputs, sizeof(INPUT));
   return Napi::Boolean::New(env, true);
 }
 

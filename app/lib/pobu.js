@@ -48,8 +48,12 @@ function write(keys) {
 function mouseMove(dx, dy, absolute = true) {
   pobu.mouseMove(dx, dy, absolute)
 }
+function mouseClick(dx, dy, absolute = true) {
+  pobu.mouseClick(dx, dy, absolute)
+}
 module.exports = {
   keyTap,
   write,
   mouseMove,
+  mouseClick
 }
