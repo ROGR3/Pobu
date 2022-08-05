@@ -65,21 +65,21 @@ function interpret(parsed) {
           break;
         case "press":
           gkm.events.on("key.pressed", (key) => {
-            if (key == eventButton)
+            if (key[0].toLowerCase() == eventButton)
               simulate(doables)
           })
           break;
         case "release":
           gkm.events.on("key.released", (key) => {
-            if (key == eventButton)
+            if (key[0].toLowerCase() == eventButton)
               simulate(doables)
           })
           break;
         case "write":
           let clickedHotkeys = ""
           gkm.events.on("key.pressed", (key) => {
-            if (key.length == 1)
-              clickedHotkeys += key
+            if (key[0].toLowerCase().length == 1)
+              clickedHotkeys += key[0].toLowerCase()
             if (clickedHotkeys.includes(eventButton)) {
               clickedHotkeys = ""
               simulate(doables)
