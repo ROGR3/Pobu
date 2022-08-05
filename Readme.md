@@ -1,7 +1,7 @@
 # Pobu 
 **LTS version:** Not deployed yet
 
-**Latest version:** v0.1.0
+**Latest version:** v0.1.1
 
 Pobu is programming language for creating scripts and simulating user-like events. Thanks to C/C++ native addons, pobu is fast and safe to type. Language itself is really beginner friendly, no previous expiriences in programming are not a problem.
 
@@ -33,7 +33,7 @@ Pobu is open-source programming language and everyone can use it. Please, use on
 ## 1. Basic setup & Hello world
 
 ### 1.1 Installation 
-You can download the latest stable version [Here](https://github.com/Borecjeborec1/Pobu/releases/tag/v0.1.0).
+You can download the latest stable version [Here](https://github.com/Borecjeborec1/Pobu/releases/tag/v0.1.1).
 Or you can go to the GitHub releases and find your desired version there.
 
 When the download is completed, you are done. No other tasks are needed for basic usage. *(Later we will look closer to the windows PATH enviroment settings and file location. The whole Pobu installer is comming soon!)*
@@ -135,7 +135,10 @@ wait 1000
 
 
 ## 4. Known limitations
-v0.1.0
+v0.1.1
 
 - Windows only! (More OS support in future)
-- Double-click is not working properly!
+
+
+## 5. Comming soon!
+v0.1.1
