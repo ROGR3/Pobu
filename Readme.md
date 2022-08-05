@@ -25,7 +25,8 @@ Pobu is open-source programming language and everyone can use it. Please, use on
         - [Press](#221-press)
         - [Write](#222-write)
         - [Move](#223-move)
-        - [Wait/Sleep](#224-waitsleep)
+        - [Click](#224-click)
+        - [Wait/Sleep](#225-waitsleep)
 - [Examples](#3-examples)
 - [Limitations](#4-known-limitations)
 
@@ -122,7 +123,16 @@ move 100 200 // move the cursor 100 on x axis and 200 on y axis
 //absolute movement
 move absolute 100 200 // move the cursor on the 100, 200 coordinates
 ```
-##### 2.2.4 wait/sleep
+##### 2.2.4 click
+This emitter is used to control and click the mouse cursor. It will click cursor on desired positions
+```
+// relative movement
+click 100 200 // click on the 100 on x axis and 200 on y axis
+
+//absolute movement
+click absolute 100 200 // click on the on the 100, 200 coordinates
+```
+##### 2.2.5 wait/sleep
 This emitter initiate an stop. How long the stop will be indicates the parameter in miliseconds!
 ```
 wait 1000
