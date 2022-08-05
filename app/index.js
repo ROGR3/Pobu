@@ -91,10 +91,6 @@ function interpret(parsed) {
             simulate(doables)
           })
           break;
-        // case "doubleClick":
-        //   gkm.events.on("mouseDoubleClick", () => {
-        //     simulate(doables)
-        //   })
       }
     }
   }
@@ -116,7 +112,11 @@ async function simulate(codeBlock) {
           }
           break
         case "click":
-          pobu.mouseClick()
+          if (codes[1] == "relative") {
+            pobu.mouseClick(+codes[2], +codes[3], false)
+          } else {
+            pobu.mouseClick(+codes[1], +codes[2])
+          }
           break
         case "move":
           if (codes[1] == "relative") {
