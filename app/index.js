@@ -64,6 +64,7 @@ function interpret(parsed) {
           simulate(doables)
           break;
         case "press":
+
           gkm.events.on("key.pressed", (key) => {
             if (key[0].toLowerCase() == eventButton)
               simulate(doables)

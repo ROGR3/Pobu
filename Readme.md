@@ -148,6 +148,7 @@ wait 1000
 v0.1.1
 
 - Windows only! (More OS support in future)
+- Listeners are not working properly on some machines!
 
 
 ## 5. Comming soon!
