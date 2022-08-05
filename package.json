@@ -3,8 +3,10 @@
   "version": "0.1.1",
   "description": "Programming language for simulating user-like events",
   "main": "app/index.js",
-  "directories": {
-    "example": "examples"
+  "scripts": {
+    "build": "cd app && npm run build",
+    "compile": "cd app && npm run compile",
+    "test": "node ./app/index.js ./app/test/test.pobu"
   },
   "repository": {
     "type": "git",

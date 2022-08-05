@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node-gyp rebuild",
-    "github": "node ./helpers/github.js",
-    "compile": "pkg index.js --targets node16-win-x64 --compress GZip --out-path ./app",
-    "test": "node ./index.js ./test/test.pobu"
+    "compile": "pkg index.js --targets node16-win-x64 --compress GZip --out-path ./app"
   },
   "author": "borecjeborec1",
   "license": "MIT",
