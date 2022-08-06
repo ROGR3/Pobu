@@ -1,11 +1,12 @@
 {
   "name": "pobu",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Programming language for simulating user-like events",
   "main": "app/index.js",
   "scripts": {
     "build": "cd app && npm run build",
     "compile": "npx caxa --input \"./app\" --output \"bin/pobu.exe\" -- \"{{caxa}}/node_modules/.bin/node\" \"{{caxa}}/index.js\"",
+    "version": "node helpers/version.js",
     "test": "node ./app/index.js ./app/test/test.pobu",
     "test:binary": "\"\"./app/app/pobu.exe\"\" ./app/test/test.pobu"
   },

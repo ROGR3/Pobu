@@ -1,7 +1,7 @@
 const fs = require("fs")
 
-const LAST_VERSION = "0.1.0"
-const NEW_VERSION = "0.1.1"
+const LAST_VERSION = "0.1.1"
+const NEW_VERSION = "0.1.2"
 
 const MD_PATHS = ["Readme.md"]
 
