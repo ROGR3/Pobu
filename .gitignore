@@ -3,3 +3,4 @@ tempCodeRunner.*
 tempCodeRunnerFile.*
 bin/
 test/
+*.exe
