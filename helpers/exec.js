@@ -1,8 +1,8 @@
 const { compile } = require('nexe')
 
 compile({
-  input: '../index.js',
-  output: './app/pobu',
+  input: '../app/index.js',
+  output: '../app/pobu',
   build: true
 
 }).then(() => {

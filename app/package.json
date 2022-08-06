@@ -1,11 +1,22 @@
 {
   "name": "pobu",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Easiest programming language for scripting",
   "main": "index.js",
   "scripts": {
-    "build": "node-gyp rebuild",
-    "compile": "pkg index.js --targets node16-win-x64 --compress GZip -o ./app/pobu"
+    "build": "node-gyp rebuild"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "node_modules/*",
+      "node_modules/lepikevents/build/"
+    ],
+    "targets": [
+      "node16-win-x64"
+    ],
+    "outputPath": "app/app",
+    "output": "pobu"
   },
   "author": "borecjeborec1",
   "license": "MIT",
@@ -13,7 +24,10 @@
   "dependencies": {
     "bindings": "^1.5.0",
     "gkm": "^0.2.0",
-    "lepikevents": "^1.5.2",
+    "lepikevents": "^1.5.12",
     "node-addon-api": "^4.3.0"
+  },
+  "devDependencies": {
+    "caxa": "^2.1.0"
   }
 }

@@ -5,8 +5,9 @@
   "main": "app/index.js",
   "scripts": {
     "build": "cd app && npm run build",
-    "compile": "cd app && npm run compile",
-    "test": "node ./app/index.js ./app/test/test.pobu"
+    "compile": "npx caxa --input \"./app\" --output \"bin/pobu.exe\" -- \"{{caxa}}/node_modules/.bin/node\" \"{{caxa}}/index.js\"",
+    "test": "node ./app/index.js ./app/test/test.pobu",
+    "test:binary": "\"\"./app/app/pobu.exe\"\" ./app/test/test.pobu"
   },
   "repository": {
     "type": "git",
