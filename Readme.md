@@ -60,6 +60,10 @@ Now when we have our code ready, we can run it. Here comes the trickier part if 
 3. Now paste your hello_world app location (*"C:/Users/test/hello_world.pobu"* in my case).
 4. Your whole terminal command should look like this *"C:/Users/test/Pobu.exe C:/Users/test/hello_world.pobu"*. Now press enter.
 Any time you write hello, this app will simulate *"world"* for you. If you want to quit press `CTRL`+`Q` to the terminal or just close it, the process will be ended together.
+
+```shell
+<your_path>/Pobu.exe <your_path>/hello_world.pobu
+```
  
 ## 2. Syntaxes
 ### 2.0 Comments
